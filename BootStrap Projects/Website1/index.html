@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Lone Ranger Diaries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--Start Navbar-->
+    <div class="navbar navbar-inverse">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand text-muted" href="#">The<br>Lone<br>Ranger Diaries</a>
+        <div class="collapse navbar-collapse navbar-nav">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Backpack Diaries</a></li>
+            <li><a href="#">Motorcycle Diaries</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-target="#">Travel Tips<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Destinations</a> </li>
+                <li><a href="#">Travel Goods </a> </li>
+                <li><a href="#">Places to see</a> </li>
+                <li class="divider"></li>
+                <li><a href="#">Contact</a> </li>
+              </ul>
+              </li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+        <div>
+         <ul class="contact navbar-nav visible-md visible-lg">
+          <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+         </ul>
+        </div>
+        <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon" id="basic-addon1">
+                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></span>
+        </div>
+      </div>
+    </div>
+    <!--End Navbar-->
+    <!--Begin carousel-->
+    <div id="myCarousel" class="carousel slide visible-md visible-lg">
+      <!-- <div class="container"> -->
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+              <div class="imageCarousel">
+                <img class="img-responsive" src="img/paris.jpg">
+                <div class="imageContent">
+                  <h1>From Paris to India</h1>
+                  <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today.</p>
+                  <p class="btn-group">
+                    <a class="btn btn-success btn-lg" href="#">Download the book.</a>
+                    <a class="btn btn-default btn-lg hidden-xs" data-toggle="modal" href="#textModal">Text me the link</a>
+                  </p>   
+                </div>  
+              </div>      
+            </div>
+            <div class="item">
+            <div class="imageCarousel">
+                <img class="img-responsive" src="img/hongkong.jpg">
+                <div class="imageContent">
+              <h1>A CARNAVAL OF RESISTANCE</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p><a class="btn btn-success btn-lg" href="#">Get started today!</a>
+              </p>   
+               </div>  
+              </div>   
+            </div>
+            <div class="item">
+            <div class="imageCarousel">
+                <img class="img-responsive" src="img/city.jpg">
+                <div class="imageContent">
+              <h1>Beautiful view of the city</h1>
+              <p class="lead"> Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p><a class="btn btn-success btn-lg" href="#">Get started today!</a></p>    </div>  
+              </div>         
+            </div>
+          </div> 
+        <!-- Controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+          </a>
+        <!-- </div>  -->
+      </div>
+      <!--End Carousel-->
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-camera"></b>
+          <h2>Visiting Las Bachas in the Galápagos</h2>
+          <p>Located on the northern coast of Santa Cruz Island, Las Bachas is quiet little beach is the perfect spot to unwind and spot wildlife!</p>
+        </div>
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-user"></b>
+          <h2>Visiting Genovesa Island in the Galápagos</h2>
+          <p>I started my first full day on board MV Origin by visiting Genovesa Island! Also known as Bird Island, this spot is known for its gorgeous ecosystem.</p>
+       </div>
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-cloud"></b>
+          <h2>Where to Find the Best Food Around Iceland</h2>
+          <p>Iceland isn’t just glaciers and geysers-- the food around Iceland will exceed expectations. Check out these food spots in Reykjavik and surrounding towns!</p>
+        </div>
+      </div>
+      </div>
+       <hr>
+      <div class="footer">
+        <p>&copy; 2017 Yashwanth</p>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script  src="js/script.js"></script>
+  </body>
+</html>
