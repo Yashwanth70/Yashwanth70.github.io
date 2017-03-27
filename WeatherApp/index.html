@@ -1,0 +1,69 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
+
+</head>
+<body> <!-- Body to display Weather Stats -->
+<p class="fade">Drag the pointer in order to get Statistics.</p>
+<div class="body">
+  <h1>WeatherForecast Web Application</h1>
+<div class="statistics">
+  <ul>
+    <li class="address">Address : </li>
+    <div class="displayNone">
+    <li class="mainWeather">Main Weather<ul>
+      <li class="weather">Weather : </li>
+      <li class="description">Description : </li>
+    </ul></li>
+    <li class="plLat">Latitude : </li>
+    <li class="plLon">Longitude : </li>
+    <li>Atmosphere Stats : <ul>
+      <li class="temp">Temperature : </li>
+      <li class="pressure">Pressure : </li>
+      <li class="humidity">Humidity : </li>
+    </ul></li>
+    <li>Wind Stats : <ul>
+      <li class="speed">Speed : </li>
+      <li class="deg">Direction : </li>
+    </ul></li>
+    <li>Sun<ul>
+      <li class="sunrise">SunRise : </li>
+      <li class="sunset">Sunset : </li>
+    </ul> </li>
+    </div>
+   </ul>
+</div>
+</div>
+<div id="map"></div> <!-- map class to display map in the body -->
+<!-- <script type="text/javascript"> 
+        //script to handle http requests
+//   var surl = "http://ip-api.com/json";      
+//             $.ajax({                
+//                 type: 'GET',
+//                 url: surl,
+//                 crossDomain: true,
+//                 contentType: "application/json; charset=utf-8",
+//                 dataType: "jsonp",
+//                 success: function(msg) {                   
+//                         console.log(msg.city);
+//                         console.log(msg.region);
+//                 },
+//                 error: function(xhr, status, error) { alert('Servidor de error 404 !!'); },
+//                 async: false,
+//                 cache: false
+//             });
+</script> -->
+<script type="text/javascript" src="main.js"></script>
+<script async defer          
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvo6upDpIoOeiCOqZ3tmOiX2PSSRV_lc0&callback=initMap">
+    </script>
+</body>
+<!--   above script to display map onto map class div -->
+<link rel="stylesheet" type="text/css" href="style.css">
+</html>

@@ -1,0 +1,22 @@
+.body{
+	position: absolute;
+	z-index: 10;
+	 margin: auto;
+	 top:15%;
+	 font-weight: bold;
+	background:rgba(0,0,0,0.5);
+color: white;}
+.fade,#demo{
+	position: absolute;
+	z-index: 10;
+	color: red;
+	left: 40%;
+	font-weight: bold;
+}
+ #map {
+        height: 100%;
+        width: 100%;
+       }
+}
+}
+}
