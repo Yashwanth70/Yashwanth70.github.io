@@ -1,10 +1,11 @@
+// $.ajax({});
       // initMap function called on loading map onto browser
       function initMap() {
           // using ip-api.com api to get current location and using the response to pass
           //  to openweathermap api to get all weather conditions
-
-       $.getJSON('http://ip-api.com/json', function(locationIp) {
-        $.getJSON('http://api.openweathermap.org/data/2.5/weather?q='+locationIp.city+'',+locationIp.region+'&appid=a35e9a8b8962b6bf0bdf1eff2802403c', function(weatherDisplay){
+       $.getJSON('http://ip-api.com/json/?callback=', function(locationIp) {
+        $.getJSON('http://api.openweathermap.org/data/2.5/weather?q='+locationIp.city+'',
+          +locationIp.region+'&appid=a35e9a8b8962b6bf0bdf1eff2802403c', function(weatherDisplay){
           $(".address").append(locationIp.city + ','+locationIp.region);
           $(".weather").append(weatherDisplay.weather[0].main);
            $(".description").append(weatherDisplay.weather[0].description);
