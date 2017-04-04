@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Mockup Generator</title>
+    <meta name="description" content="MockupGenerator">
+    <meta name="author" content="Yashwanth">
+    <!-- <link rel="icon" href="img/favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">   
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mockup Generator</a>
+    </nav>    
+    <div class="jumbotron">
+      <div class="content">
+          <canvas id="bg"></canvas>
+          <canvas id="myCanvas"></canvas>
+          <input type="file" name="myFile" id="fileInput" />
+          <p class="btn-group">
+            <a class="btn btn-primary btn-lg"href="#"><label for="fileInput">Upload</label></a>
+            <a class="btn btn-success btn-lg" href="#" onclick="dl();">Download</a>
+          </p> 
+          <a id="imgdlhelper" style="display:none;"href="" download="signature.jpg" >&nbsp;</a>
+      </div>      
+    </div>
+    <!-- <canvas id="bg" width="640" height="480" 
+    style="position: absolute; z-index: 0;border:1px solid #d3d3d3;">
+    </canvas>
+    <canvas id="fg" width="320" height="240" 
+    style="position: absolute; z-index: 1;border:1px solid #d3d3d3;">
+    </canvas> -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script  src="js/script.js"></script>
+  </body>
+</html>
