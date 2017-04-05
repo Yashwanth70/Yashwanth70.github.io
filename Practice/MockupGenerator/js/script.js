@@ -29,13 +29,10 @@ function imageLoader() {
     reader.readAsDataURL(fileInput.files[0]);
 }
 window.dl = function() { 
-    img.height=smallCanvas.height;
-    img.width=smallCanvas.width;
-    div.append(img);
-    ctxSml.clearRect(0, 0, smallCanvas.width,smallCanvas.height);  //Dont include in Github
+   // ctxSml.clearRect(0, 0, smallCanvas.width,smallCanvas.height);  //Dont include in Github
     ctx.clearRect(0, 0, bigCanvas.width,bigCanvas.height);
     ctx.drawImage(image,0,0,bigCanvas.width,bigCanvas.height);
-    //ctx.drawImage(img,120,100,smallCanvas.width,smallCanvas.height);
+    ctx.drawImage(img,120,100,smallCanvas.width,smallCanvas.height);
     var data1 = bigCanvas.toDataURL('image/png',1.0);
    var imgDLHelper = document.getElementById('imgdlhelper');
    imgDLHelper.setAttribute('href',data1);
