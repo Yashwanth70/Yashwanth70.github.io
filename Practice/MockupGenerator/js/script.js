@@ -29,8 +29,7 @@ function imageLoader() {
     reader.readAsDataURL(fileInput.files[0]);
 }
 window.dl = function() { 
-  var data2 = smallCanvas.toDataURL('image/png',1.0);
-    $("div").css({"background-image":data2});
+    div.append(img);
     ctxSml.clearRect(0, 0, smallCanvas.width,smallCanvas.height);  //Dont include in Github
     ctx.clearRect(0, 0, bigCanvas.width,bigCanvas.height);
     ctx.drawImage(image,0,0,bigCanvas.width,bigCanvas.height);
