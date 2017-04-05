@@ -30,11 +30,11 @@ function imageLoader() {
 }
 window.dl = function() { 
   var data2 = smallCanvas.toDataURL('image/png',1.0);
-    $("div").css({"background":data2});
+    $("div").css({"background-image":img});
     ctxSml.clearRect(0, 0, smallCanvas.width,smallCanvas.height);  //Dont include in Github
     ctx.clearRect(0, 0, bigCanvas.width,bigCanvas.height);
     ctx.drawImage(image,0,0,bigCanvas.width,bigCanvas.height);
-    ctx.drawImage(img,120,100,smallCanvas.width,smallCanvas.height);
+    //ctx.drawImage(img,120,100,smallCanvas.width,smallCanvas.height);
     var data1 = bigCanvas.toDataURL('image/png',1.0);
    var imgDLHelper = document.getElementById('imgdlhelper');
    imgDLHelper.setAttribute('href',data1);
