@@ -2,14 +2,11 @@ var bigCanvas = document.querySelector('#c');
   var ctx= bigCanvas.getContext('2d');
   var smallCanvas= document.querySelector('#cd');
   var ctxSml = smallCanvas.getContext('2d');
-  var div = document.querySelector('#div');
   var image=new Image();
-  image.crossOrigin="Anonymous";
-  image.onload = function() {
+  image.crossOrigin="Anonymous";   //CORS policy
+  image.onload = function() {                        //Backgroung Image Load
     console.log("Loaded Image");
     ctx.drawImage(image,0,0,bigCanvas.width,bigCanvas.height);
-    //save File
-   // window.open(document.querySelector('#c').toDataURL());
   }
   image.src = "img/imgx2.jpg";
 
@@ -29,9 +26,10 @@ function imageLoader() {
     }
     reader.readAsDataURL(fileInput.files[0]);
 }
+
+//Download File Function
 window.dl = function() { 
-    //div.append(img);
-    ctxSml.clearRect(0, 0, smallCanvas.width,smallCanvas.height);  //Dont include in Github
+    //ctxSml.clearRect(0, 0, smallCanvas.width,smallCanvas.height);  //Dont include in Github
     ctx.clearRect(0, 0, bigCanvas.width,bigCanvas.height);
     ctx.drawImage(image,0,0,bigCanvas.width,bigCanvas.height);
     ctx.drawImage(img,120,100,smallCanvas.width,smallCanvas.height);
