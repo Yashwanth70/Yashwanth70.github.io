@@ -29,6 +29,8 @@ function imageLoader() {
     reader.readAsDataURL(fileInput.files[0]);
 }
 window.dl = function() { 
+    img.height=smallCanvas.height;
+    img.width=smallCanvas.width;
     div.append(img);
     ctxSml.clearRect(0, 0, smallCanvas.width,smallCanvas.height);  //Dont include in Github
     ctx.clearRect(0, 0, bigCanvas.width,bigCanvas.height);
